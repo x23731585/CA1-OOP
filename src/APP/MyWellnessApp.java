@@ -6,22 +6,15 @@ package APP;
 
 /**
  *
- * Data Class
-Purpose: Define what information is stored about each run
-* 
-* Compute/Logic Class
-Purpose: Add runs, calculate totals or averages, manage data.
-* 
-* UI Class (JFrame)
-Purpose: Show input fields, buttons, and display output to the user.
+ * @author Alexb
  */
-public class MAINAPP {
+public class MyWellnessApp {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Screen.show(new HomePageUI(), "My Wellness App");
     }
     
 }
