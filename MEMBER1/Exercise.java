@@ -44,6 +44,6 @@ public int getCaloriesBurned() { return caloriesBurned; }
 // returns formatted exercise information
 @Override
 public String toString() {
-return "Your " + type + " for " + duration + " minutes at " + intensity + "level burned -> " + caloriesBurned + " kcal";
+return "Your " + type + " for " + duration + " minutes at a " + intensity + " level burned -> " + caloriesBurned + " kcal";
 }
 }
