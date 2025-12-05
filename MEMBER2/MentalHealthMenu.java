@@ -1,9 +1,13 @@
 // Desmon
-package mentalhealthhub;
+package MEMBER2;
 
+import MEMBER2.MoodEntry;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
+import MEMBER2.JournalEntry;
+import MEMBER2.MeditationTimer;
+import MEMBER2.MentalHealthHub;
 
 // Console menu to interact with the MentalHealthHub
 public class MentalHealthMenu {

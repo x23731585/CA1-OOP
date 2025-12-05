@@ -1,10 +1,13 @@
 // Author: Desmond Peter
-package mentalhealthhub;
+package MEMBER2;
 
+import MEMBER2.MoodEntry;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import MEMBER2.JournalEntry;
+import MEMBER2.MeditationTimer;
 
 // Stores all mood entries, journal entries and meditation data
 public class MentalHealthHub {

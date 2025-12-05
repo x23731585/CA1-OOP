@@ -1,6 +1,7 @@
 // Author: Desmond Peter
-package mentalhealthhub;
+package MEMBER2;
 
+import MEMBER2.MoodEntry;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.time.LocalDate;
@@ -9,25 +10,34 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import MEMBER2.JournalEntry;
+import MEMBER2.MeditationTimer;
+import MEMBER2.MentalHealthHub;
+import APP.HomePageUI;
+import APP.Screen;
+
 
 // Simple GUI for the Mental Health Hub
-public class MentalHealthHubGUI extends JFrame {
+public class MentalHealthHubGui  extends JPanel {
 
     private MentalHealthHub hub;
 
-    public MentalHealthHubGUI(MentalHealthHub hub) {
+    public MentalHealthHubGui(MentalHealthHub hub) {
         this.hub = hub;
         initComponents();
     }
 
-    private void initComponents() {
-        setTitle("Mental Health Hub");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 450);
-        setLocationRelativeTo(null);
+   private void initComponents() {
 
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(0, 1, 5, 5));
+    // The whole MentalHealthHubGui IS the panel now
+    setLayout(new BorderLayout());
+
+    JPanel panel = new JPanel();
+    panel.setLayout(new GridLayout(0, 1, 5, 5));
+
+    // Add the panel to THIS JPanel
+    add(panel, BorderLayout.CENTER);
+
 
         JButton btnLogMood = new JButton("Log mood");
         JButton btnViewMoods = new JButton("View moods");
@@ -42,6 +52,9 @@ public class MentalHealthHubGUI extends JFrame {
         JButton btnTip = new JButton("Show motivational tip");
         JButton btnSave = new JButton("Save all data");
         JButton btnLoad = new JButton("Load all data");
+        JButton btnHome = new JButton("Home Page");
+
+        
 
         panel.add(btnLogMood);
         panel.add(btnViewMoods);
@@ -56,6 +69,9 @@ public class MentalHealthHubGUI extends JFrame {
         panel.add(btnTip);
         panel.add(btnSave);
         panel.add(btnLoad);
+        panel.add(btnHome);
+
+       
 
         add(panel, BorderLayout.CENTER);
 
@@ -73,6 +89,8 @@ public class MentalHealthHubGUI extends JFrame {
         btnTip.addActionListener(e -> showTip());
         btnSave.addActionListener(e -> saveAll());
         btnLoad.addActionListener(e -> loadAll());
+        btnHome.addActionListener(e -> Screen.show(new HomePageUI(), "Home Page"));
+
     }
 
     private LocalDate readDate(String message) {
@@ -271,4 +289,7 @@ public class MentalHealthHubGUI extends JFrame {
             JOptionPane.showMessageDialog(this, "Error loading: " + e.getMessage());
         }
     }
+    
+        
+
 }
