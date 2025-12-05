@@ -5,12 +5,14 @@
 package MEMBER3;
 
 
-
-
-import MEMBER3.Screen;
+import APP.HomePageUI;
+import APP.HomePageUI;
+import APP.Screen;
+import APP.Screen;
 import MEMBER3.LeaderboardUI;
 import MEMBER3.ChallengeProgressUI;
 import MEMBER3.ChallengeListUI;
+import MEMBER1.LogExerciseUI;
 import MEMBER3.ChallengeListUI;
 import MEMBER3.ChallengeProgressUI;
 import MEMBER3.LeaderboardUI;
@@ -126,7 +128,7 @@ public class CommunityChallengeUI extends javax.swing.JPanel {
     }//GEN-LAST:event_btnChallengerListActionPerformed
 
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
-     
+      Screen.show(new HomePageUI(), "Home");
       
     }//GEN-LAST:event_btnHomeActionPerformed
 

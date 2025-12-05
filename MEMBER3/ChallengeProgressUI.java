@@ -5,7 +5,7 @@
 package MEMBER3;
 
 import javax.swing.JOptionPane;
-import MEMBER3.Screen;
+import APP.Screen;
 
 /**
  *

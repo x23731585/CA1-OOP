@@ -5,7 +5,7 @@
 package MEMBER3;
 
 
-import MEMBER3.Screen;
+import APP.Screen;
 import javax.swing.table.DefaultTableModel;  // 
 /**
  *

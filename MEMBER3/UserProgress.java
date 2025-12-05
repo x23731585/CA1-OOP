@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  *.
  *  calculates total point from a challenge.
- * tracks user progress if they completed challenge etc
+ * tracks user progress if they completed chall;enge etc
  *  
  */
 public class UserProgress {
